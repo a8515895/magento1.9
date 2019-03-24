@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Basetut_Helloworld>
+            <version>0.1.0</version>
+        </Basetut_Helloworld>
+    </modules>
+    <frontend>
+        <routers>
+            <Khoa>
+                <use>standard</use>
+                <args>
+                    <module>Custom_Khoa</module>
+                    <frontName>khoa</frontName>
+                </args>
+            </Khoa>
+        </routers>
+        <layout>
+            <updates>
+                <Khoa>
+                    <file>khoa.xml</file>
+                </Khoa>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <blocks>
+            <Khoa>
+                <class>Custom_Khoa_Block</class>
+            </Khoa>
+        </blocks>
+    </global>
+</config>
